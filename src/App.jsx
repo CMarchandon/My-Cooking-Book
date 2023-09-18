@@ -19,10 +19,26 @@ function App() {
 
 
   return (
+
+    //The infamous router, every page is by alpabetical order, if u add want please follow the logic 
     
-    <body>
-      <p> Hello world</p>
-    </body>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/CreateRecipe" element={<CreateRecipe/>}/>
+          <Route path="/Discover" element={<Discover/>}/>
+          <Route path="/EditRecipe" element={<EditRecipe/>}/>
+          <Route index element={<Home/>}/>
+          <Route path="/Home" element={<Home/>}/>
+          <Route path="/MyProfil" element={<MyProfil/>}/>
+          <Route path="/Page404" element={<Page404/>}/>
+          <Route path="/SingleDiscover" element={<SingleDiscover/>}/>
+          <Route path="/SingleRecipe" element={<SingleRecipe/>}/>
+
+        </Routes>
+      </BrowserRouter>
+    </div>
   
   )
 }
