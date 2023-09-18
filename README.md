@@ -28,3 +28,5 @@ MyCookingBook is an application aimed at cooking enthusiasts who want to simplif
 **Design:** A simple and convenient design will be created on Figma for the application, including at least a homepage, an individual recipe page, and a page with recipe suggestions for the week (selected from the recipes already saved by the user).
 
 **Marketing Message:** Are you spending hours searching recipe websites to find one? Are you looking for something to cook with what's in your fridge? Do you want a collection with only recipes you've already tried and approved? Do you want to store the recipes you've created? Here's the solution: MyCookingBook.
+
+![Preview log-in page](image.png)
