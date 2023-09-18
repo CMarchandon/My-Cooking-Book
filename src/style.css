@@ -4,3 +4,10 @@ body {
     color: 1C1B19;
 }
 
+nav {
+    background-color: #FF9F68;
+}
+
+nav > ul {
+    display: flex;
+}
