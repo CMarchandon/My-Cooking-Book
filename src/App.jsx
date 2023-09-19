@@ -1,5 +1,4 @@
-
-import "/src/style.css";
+import '/src/SCSS/style.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import CreateRecipe from "./pages/CreateRecipe";
@@ -22,7 +21,6 @@ function App() {
 
     //The infamous router, every page is by alpabetical order, if u add want please follow the logic 
    <>
-  <header></header>
     <div>
         <BrowserRouter>
           <Routes>
@@ -39,6 +37,8 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
+      
+      <header></header>
   </>
   )
 }

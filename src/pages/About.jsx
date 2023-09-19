@@ -4,7 +4,9 @@ export default function About() {
     return (
         <>
         <Header/>
-            <p>this is the about page, congrat</p>
+            <div>
+                <img></img>
+            </div>
         </>
     
     )
