@@ -1,3 +1,5 @@
+@import './sreachBar';
+
 body {
     font-family: $font;
 }
@@ -5,34 +7,25 @@ body {
 nav {
     background-color: $lightOrange;
     color: $fakeWhite;
-    padding: 20px;
+    padding: 22px;
     font-size: 15px;
+    min-height: 72px;
     
-    #recipe-search {
-        background-image: url('/src/assets/icons/magnifying\ glass.svg');
-        background-size: 20px 20px;
-        background-position: -15px center;
-        background-repeat: no-repeat;
-        border: none;
-        padding: 7px 15px 10px 15px;
-        border-radius: 20px;
-        border-left: 30px solid transparent;
-      }
-
     ul {
         list-style: none;
-        padding: 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 15px;
 
         li{
-            flex-wrap: wrap;     
+            flex-wrap: wrap;   
         }
 
         a{
             text-decoration: none;
-            padding: 5px 25px 5px 25px;
+            font-weight: 700;
+            padding: 5px 64px 5px 64px;
             border-radius: 5px;
             &:hover{
                 text-decoration: underline;
@@ -52,10 +45,36 @@ nav {
     #new-recipe-btn{
         background-color: $darkOrange;
         border-radius: 5px;
-        border: solid $darkOrange;
-        padding: 5px 25px 5px 25px;
+        border: solid 1px $darkOrange;
+        padding: 6px 35px 6px 35px;
+        font-size: 15px;
+        &:hover{
+            border: solid 1px $fakeWhite;
+        }
         a {
             padding: 0px;
+            font-weight: 700;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
+}
+
+#search-bar-smartphone {
+    display: none;
+}
+
+@media screen and (max-width:1240px){
+  .nav-links {
+    display: none;
+  }  
+  header{
+    justify-content: center;
+    text-align: center;
+  }
+  #search-bar-smartphone{
+    display: block;
+    margin: 15px;
+  }
 }
