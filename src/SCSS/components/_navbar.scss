@@ -7,10 +7,17 @@ nav {
     color: $fakeWhite;
     padding: 20px;
     font-size: 15px;
-
-    #new-recipe-btn{
-        background-color: $darkOrange;
-    }
+    
+    #recipe-search {
+        background-image: url('/src/assets/icons/magnifying\ glass.svg');
+        background-size: 20px 20px;
+        background-position: -15px center;
+        background-repeat: no-repeat;
+        border: none;
+        padding: 7px 15px 10px 15px;
+        border-radius: 20px;
+        border-left: 30px solid transparent;
+      }
 
     ul {
         list-style: none;
@@ -20,12 +27,12 @@ nav {
         flex-wrap: wrap;
 
         li{
-            flex-wrap: wrap;      
+            flex-wrap: wrap;     
         }
 
         a{
             text-decoration: none;
-            padding: 15px;
+            padding: 5px 25px 5px 25px;
             border-radius: 5px;
             &:hover{
                 text-decoration: underline;
@@ -40,6 +47,15 @@ nav {
             flex-direction: row;
             align-items: center;
             flex-wrap: wrap;
+        }
+    }
+    #new-recipe-btn{
+        background-color: $darkOrange;
+        border-radius: 5px;
+        border: solid $darkOrange;
+        padding: 5px 25px 5px 25px;
+        a {
+            padding: 0px;
         }
     }
 }
