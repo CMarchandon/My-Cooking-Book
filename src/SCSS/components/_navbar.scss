@@ -1,0 +1,45 @@
+body {
+    font-family: $font;
+}
+
+nav {
+    background-color: $lightOrange;
+    color: $fakeWhite;
+    padding: 20px;
+    font-size: 15px;
+
+    #new-recipe-btn{
+        background-color: $darkOrange;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li{
+            flex-wrap: wrap;      
+        }
+
+        a{
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 5px;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:visited{
+                color: $fakeWhite;
+            }
+        }
+
+        .left-items, .right-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

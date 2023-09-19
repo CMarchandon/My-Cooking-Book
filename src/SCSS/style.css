@@ -51,4 +51,45 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  background-color: #FF9F68;
+  color: #F9F9F9;
+  padding: 20px;
+  font-size: 15px;
+}
+nav #new-recipe-btn {
+  background-color: #FF7526;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li {
+  flex-wrap: wrap;
+}
+nav ul a {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+nav ul a:hover {
+  text-decoration: underline;
+}
+nav ul a:visited {
+  color: #F9F9F9;
+}
+nav ul .left-items, nav ul .right-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
