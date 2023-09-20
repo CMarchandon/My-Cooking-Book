@@ -1,4 +1,4 @@
-export default function SearchBarSmartphone() {
+export default function SearchBar() {
 
     return(
 <header>

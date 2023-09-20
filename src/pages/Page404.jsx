@@ -1,9 +1,10 @@
-import Header from "../component/Header";
+
+import NavBar from "../component/NavBar";
 
 export default function Page404() {
     return (
         <>
-        <Header/>
+        <NavBar/>
             <p>this is the 404 page, congrat</p>
         </>
     

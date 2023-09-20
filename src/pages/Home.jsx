@@ -1,11 +1,11 @@
-import Header from "../component/Header";
-import SearchBarSmartphone from "../component/SearchBarSmartphone";
+import NavBar from "../component/NavBar";
+import SearchBar from "../component/SearchBar";
 
 export default function Home() {
     return (
         <>
-        <Header/>
-        <SearchBarSmartphone/>
+        <NavBar/>
+        <SearchBar/>
             <p>this is the home page, congrat</p>
         </>
     

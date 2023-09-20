@@ -1,81 +1,108 @@
-@import './sreachBar';
+@import './searchBar';
 
-body {
-    font-family: $font;
-}
-
-nav {
-    background-color: $lightOrange;
-    color: $fakeWhite;
-    padding: 22px;
-    font-size: 15px;
-    min-height: 72px;
-    
-    ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-top: 15px;
-
-        li{
-            flex-wrap: wrap;   
-        }
-
-        a{
-            text-decoration: none;
-            font-weight: 700;
-            padding: 5px 64px 5px 64px;
-            border-radius: 5px;
-            &:hover{
-                text-decoration: underline;
-            }
-            &:visited{
-                color: $fakeWhite;
-            }
-        }
-
-        .left-items, .right-items {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-    }
-    #new-recipe-btn{
+/* Navbar.scss */
+.navbar {
+    #new-recipe{
         background-color: $darkOrange;
         border-radius: 5px;
-        border: solid 1px $darkOrange;
-        padding: 6px 35px 6px 35px;
-        font-size: 15px;
-        &:hover{
-            border: solid 1px $fakeWhite;
+        padding: 15px;
+    }
+    #home-phone{
+        display: none;
+    }
+    font-family: $font;
+    background-color: $lightOrange;
+    color: $fakeWhite;
+    padding: 10px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand a {
+      color: $fakeWhite;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .navbar-toggler {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      outline: none;
+      span {
+        width: 30px;
+        height: 3px;
+        background-color: $fakeWhite;
+        margin: 4px 0;
+      }
+   }
+    
+    .navbar-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .navbar-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      li {
+        margin: auto 15px;
+      }
+      a {
+        text-decoration: none;
+        color: $fakeWhite;
+        font-size: 18px;
+      }
+    }
+    #logo{
+        padding-left: 15px;
+    }
+    
+    @media (max-width: 768px) {
+        #search-bar-pc{
+            display: none;
         }
-        a {
-            padding: 0px;
-            font-weight: 700;
-            &:hover {
-                text-decoration: none;
+        #home-phone{
+            display: block;
+        }
+        #logo{
+            display: none;
+        }
+      .navbar-brand{
+        margin: auto;
+            .navbar-toggler {
+            display: flex;
+            }
+            button{
+                margin: auto;
             }
         }
+      .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: $lightOrange;
+        width: 100%;
+        text-align: center;
+        display: none;
+        transition: all 0.3s ease;
+        &.active {
+          display: flex;
+        }
+      }
+      .navbar-links {
+        flex-direction: column;
+        padding: 20px 0;
+        li {
+          margin: 10px 0;
+        }
+      }
     }
-}
-
-#search-bar-smartphone {
-    display: none;
-}
-
-@media screen and (max-width:1240px){
-  .nav-links {
-    display: none;
-  }  
-  header{
-    justify-content: center;
-    text-align: center;
   }
-  #search-bar-smartphone{
-    display: block;
-    margin: 25px;
-    filter:$shadow ;
-  }
-}
+  

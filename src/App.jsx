@@ -9,6 +9,8 @@ import MyProfil from "./pages/MyProfil";
 import Page404 from "./pages/Page404";
 import SingleDiscover from "./pages/SingleDiscover";
 import SingleRecipe from "./pages/SingleRecipe";
+import NavBar from './component/NavBar';
+import SearchBar from './component/SearchBar';
 
 
 
@@ -37,8 +39,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      
-      <header></header>
   </>
   )
 }

@@ -1,9 +1,9 @@
-import Header from "../component/Header";
+import NavBar from "../component/NavBar";
 
 export default function CreateRecipe() {
     return (
         <>
-        <Header/>
+        <NavBar/>
             <p>this is the CreateRecipe page, congrat</p>
         </>
     

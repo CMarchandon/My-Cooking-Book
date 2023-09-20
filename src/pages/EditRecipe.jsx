@@ -1,10 +1,10 @@
-import Header from "../component/Header";
-import SearchBarSmartphone from "../component/SearchBarSmartphone";
+
+import NavBar from "../component/NavBar";
 
 export default function EditRecipe() {
     return (
         <>
-        <Header/>
+        <NavBar/>
             <p>this is the EditRecipe page, congrat</p>
         </>
     

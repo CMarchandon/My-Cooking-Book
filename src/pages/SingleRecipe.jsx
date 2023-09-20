@@ -1,9 +1,10 @@
-import Header from "../component/Header";
+
+import NavBar from "../component/NavBar";
 
 export default function SingleRecipe() {
     return (
         <>
-        <Header/>
+        <NavBar/>
             <p>this is the SingleRecipe page, congrat</p>
         </>
     

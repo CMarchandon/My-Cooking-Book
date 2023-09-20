@@ -1,9 +1,10 @@
-import Header from "../component/Header";
+
+import NavBar from "../component/NavBar";
 
 export default function Discover() {
     return (
         <>
-        <Header/>
+        <NavBar/>
         <SearchBarSmartphone/>
             <p>this is the Discover page, congrat</p>
         </>

@@ -1,9 +1,10 @@
-import Header from "../component/Header";
+
+import NavBar from "../component/NavBar";
 
 export default function MyProfil() {
     return (
         <>
-        <Header/>
+        <NavBar/>
             <p>this is the MyProfilRecipe page, congrat</p>
         </>
     
