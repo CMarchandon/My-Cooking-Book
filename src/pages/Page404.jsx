@@ -6,6 +6,7 @@ export default function Page404() {
         <>
         <NavBar/>
             <p>this is the 404 page, congrat</p>
+            <Footer/>
         </>
     
     )

@@ -6,6 +6,7 @@ export default function SingleDiscover() {
         <>
         <NavBar/>
             <p>this is the SingleDiscover page, congrat</p>
+            <Footer/>
         </>
     
     )

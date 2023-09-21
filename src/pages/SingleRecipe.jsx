@@ -6,6 +6,7 @@ export default function SingleRecipe() {
         <>
         <NavBar/>
             <p>this is the SingleRecipe page, congrat</p>
+            <Footer/>
         </>
     
     )

@@ -6,6 +6,7 @@ export default function EditRecipe() {
         <>
         <NavBar/>
             <p>this is the EditRecipe page, congrat</p>
+            <Footer/>
         </>
     
     )

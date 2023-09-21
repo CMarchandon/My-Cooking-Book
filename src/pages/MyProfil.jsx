@@ -6,6 +6,7 @@ export default function MyProfil() {
         <>
         <NavBar/>
             <p>this is the MyProfilRecipe page, congrat</p>
+        <Footer/>
         </>
     
     )

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 
-export default function NavBar() {
+export default function NavBarWshearch() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -26,6 +26,7 @@ export default function NavBar() {
                 <li id="home-phone"><a href="/home">Home</a></li>
                 <li><a href="/Discover">Discover</a></li>
                 <li><a href="/About">About</a></li>
+                <li id="search-bar-pc"><SearchBar/></li>
                 <li><a href="/MyProfil"><img src="public/assets/icons/user logo navabr.svg"/></a></li>
               </ul>
             </div>

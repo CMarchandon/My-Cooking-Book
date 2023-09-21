@@ -1,3 +1,4 @@
+import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 
 export default function CreateRecipe() {
@@ -5,6 +6,7 @@ export default function CreateRecipe() {
         <>
         <NavBar/>
             <p>this is the CreateRecipe page, congrat</p>
+            <Footer/>
         </>
     
     )
