@@ -2,7 +2,7 @@ export default function SearchBar() {
 
     return(
 <header>
-        <form id="search-bar-smartphone" role="search" method="get" class="searchform" action="#">
+        <form role="search" method="get" class="searchform" action="#">
                 <input id="recipe-search" name="recipe-search" type="text"  placeholder="Look for a recipe"/>
                 <input type="hidden" name="#" value="recipe" />
         </form> 

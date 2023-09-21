@@ -26,7 +26,7 @@ export default function NavBarWshearch() {
                 <li id="home-phone"><a href="/home">Home</a></li>
                 <li><a href="/Discover">Discover</a></li>
                 <li><a href="/About">About</a></li>
-                <li id="search-bar-pc"><SearchBar/></li>
+                <li id="search-bar-pc"><SearchBar id="search-bar-disapear"/></li>
                 <li><a href="/MyProfil"><img src="public/assets/icons/user logo navabr.svg"/></a></li>
               </ul>
             </div>

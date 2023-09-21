@@ -1,0 +1,35 @@
+footer{
+    background-color: $lightOrange;
+    color: $fakeWhite;
+    font-family: $font;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 15px;
+    bottom: 0;
+    flex-wrap: wrap;
+    p{
+        text-decoration: underline;
+        margin: auto;
+    }
+    img, button {
+        margin: auto;
+    }
+    button{
+        background-color: $darkOrange;
+        border-radius: 5px;
+        border: 1px solid $darkOrange;
+        width: 192px;
+        height: 33.469px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer{
+        text-align: center;
+        button, img, p {
+            margin: 15px;
+        }
+    }
+}

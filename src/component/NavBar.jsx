@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SearchBar from './SearchBar';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,7 @@ export default function NavBar() {
             <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
               <ul className="navbar-links">
               <li id="new-recipe"><a href="/CreateRecipe">Add a new recipe</a></li>
-                <li id="home-phone"><a href="/home">Home</a></li>
+                <li id="home-phone"><a href="/Home">Home</a></li>
                 <li><a href="/Discover">Discover</a></li>
                 <li><a href="/About">About</a></li>
                 <li><a href="/MyProfil"><img src="public/assets/icons/user logo navabr.svg"/></a></li>

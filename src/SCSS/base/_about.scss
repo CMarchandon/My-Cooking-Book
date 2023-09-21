@@ -1,12 +1,46 @@
 
-.bottom-around{
+.top-about{
     background-color: white;
 }
 
+
 .about-content{
-    margin: 90px auto 90px auto;
     display: flex;
-    p, h1, h2 {
-        margin-left: 121px;
+    padding: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+        margin: auto 121px;
     }
+    p, h1, h2 {
+        margin-bottom: 25px;
+        font-family: $font;
+        max-width: 400px;
+        line-height: 24px;
+    }
+
+    h1, h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-content{
+        padding: 20%;
+    text-align: center;
+    
+    img{
+        margin: auto 46px ;
+        width: 287px;
+height: 215px;
+flex-shrink: 0;
+
+    }
+    h1, h2, p {
+        margin-top: 45px;
+    }
+    
+    }
+    
 }

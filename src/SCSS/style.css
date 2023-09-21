@@ -53,18 +53,79 @@ table {
   border-spacing: 0;
 }
 
-.bottom-around {
+.top-about {
   background-color: white;
 }
 
 .about-content {
-  margin: 90px auto 90px auto;
   display: flex;
+  padding: 200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-content img {
+  margin: auto 121px;
 }
 .about-content p, .about-content h1, .about-content h2 {
-  margin-left: 121px;
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  max-width: 400px;
+  line-height: 24px;
+}
+.about-content h1, .about-content h2 {
+  font-size: 25px;
+  font-weight: 600;
 }
 
+@media (max-width: 900px) {
+  .about-content {
+    padding: 20%;
+    text-align: center;
+  }
+  .about-content img {
+    margin: auto 46px;
+    width: 287px;
+    height: 215px;
+    flex-shrink: 0;
+  }
+  .about-content h1, .about-content h2, .about-content p {
+    margin-top: 45px;
+  }
+}
+footer {
+  background-color: #FF9F68;
+  color: #F9F9F9;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+footer p {
+  text-decoration: underline;
+  margin: auto;
+}
+footer img, footer button {
+  margin: auto;
+}
+footer button {
+  background-color: #FF7526;
+  border-radius: 5px;
+  border: 1px solid #FF7526;
+  width: 192px;
+  height: 33.469px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  footer button, footer img, footer p {
+    margin: 15px;
+  }
+}
 #recipe-search {
   background-image: url("public/assets/icons/magnifying glass.svg");
   background-size: 20px 20px;
@@ -74,6 +135,7 @@ table {
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
   border-left: 30px solid transparent;
+  display: block;
 }
 
 /* Navbar.scss */
@@ -182,4 +244,8 @@ table {
 
 body {
   background-color: #F9F9F9;
+}
+
+main {
+  font: "Inter", sans-serif;
 }/*# sourceMappingURL=style.css.map */

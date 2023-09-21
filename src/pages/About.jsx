@@ -8,7 +8,7 @@ export default function About() {
         <main>
             <div className="top-about">
                 <div className="about-content">
-                    <img src="src/assets/img/about-us_food.png" alt="picture of somes healty food"/>
+                    <img src="public/assets/img/about-us_food.png" alt="picture of somes healty food"/>
                     <div>
                         <h1>Let's talk about us!</h1>
                         <p>What is My Cooking Book? </p>
@@ -19,7 +19,9 @@ export default function About() {
             </div>
             <div className="bottom-around">
                 <div className="about-content">
-                    <img src="src/assets/img/about-us_computer.png" alt="picture of a computer"/>
+                    <div className="img">
+                    <img src="public/assets/img/about-us_computer.png" alt="picture of a computeur"/>
+                    </div>
                     <div>
                         <h2>Who are we?</h2>
                         <p>We are two young developers, constantly striving to improve ourselves. 
