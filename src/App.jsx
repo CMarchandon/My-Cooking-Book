@@ -15,6 +15,7 @@ function App() {
 
   return (
 
+    
     //The infamous router, every page is by alpabetical order, if u add want please follow the logic 
    <>
     <div>
