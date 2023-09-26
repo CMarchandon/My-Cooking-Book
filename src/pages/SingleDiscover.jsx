@@ -1,12 +1,13 @@
 
 import NavBar from "../component/NavBar";
 import Footer from "../component/Footer";
+import Page404 from "./Page404";
 
 export default function SingleDiscover() {
     return (
         <>
-        <NavBar/>
-            <p>this is the SingleDiscover page, congrat</p>
+            <NavBar/>
+            <Page404/>
             <Footer/>
         </>
     

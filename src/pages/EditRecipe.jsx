@@ -1,11 +1,12 @@
 
 import NavBar from "../component/NavBar";
+import Page404 from "./Page404";
 
 export default function EditRecipe() {
     return (
         <>
-        <NavBar/>
-            <p>this is the EditRecipe page, congrat</p>
+            <NavBar/>
+            <Page404/>
             <Footer/>
         </>
     

@@ -1,53 +1,99 @@
-
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import React from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 
 const Caroussel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 5300,
-    slidesToShow: 3, // Number of slides visible on computer
-    slidesToScroll: 1,
+  const sliderRef = useRef(null);
+
+  var settings = {
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
     responsive: [
       {
-        breakpoint: 768, // Adjust this breakpoint as needed
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1, // Number of slides visible on smartphone
-        },
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
       },
-    ],
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  const handleNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const handlePrev = () => {
+    sliderRef.current.slickPrev();
   };
 
   return (
     <div>
-      <h2>Carousel</h2>
-      <Slider {...settings}>
+      <Slider {...settings} ref={sliderRef}>
         {/* Your carousel items */}
         <div>
-          <h3>Item 1</h3>
+          <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 1</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 2</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 2</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 3</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 3</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 4</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 4</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 5</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 5</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 6</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 6</h3>
+          </div>
         </div>
         <div>
-          <h3>Item 7</h3>
+        <img src="public/assets/img/image 2.png"/>
+          <div>
+            <h3>Item 7</h3>
+          </div>
         </div>
       </Slider>
+      <button onClick={handlePrev}><img src="public/assets/icons/rigt arrow btn.svg"/></button>
+      <button onClick={handleNext}><img src="public/assets/icons/rigt arrow btn.svg"/></button>
     </div>
   );
 };

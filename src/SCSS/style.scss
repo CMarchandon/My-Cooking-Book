@@ -5,11 +5,14 @@
 @import './components/_accordeon.scss';
 @import './components/_footer.scss';
 @import './components/_navbar.scss';
+@import "./base/_page404.scss";
 
 body {
     background-color: $fakeWhite;
+    min-height: 100vh;
 }
 
-main{
-    font: $font;
+
+*{
+    font-family: $font;
 }

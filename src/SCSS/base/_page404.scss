@@ -1,0 +1,28 @@
+#page-404{
+    text-align: center;
+    justify-content: center;  
+    margin-top: 8em;
+    margin-bottom: 20em;
+    h1{
+        font-size: 12em;
+    }
+    p{
+        margin: 5px;
+        font-size: 15px;
+    }
+    button{
+        background-color: $darkOrange;
+        border-radius: 5px;
+        border: 1px solid $darkOrange;
+        width: 192px;
+        height: 33.469px;  
+        margin: 15px;
+        a{
+            color: $fakeWhite;
+        }
+
+        &:hover{
+            background-color: $lightOrange;
+        }
+    }
+}

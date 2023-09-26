@@ -1,13 +1,14 @@
 
 import NavBar from "../component/NavBar";
 import Footer from "../component/Footer";
+import Page404 from "./Page404";
 
 export default function MyProfil() {
     return (
         <>
-        <NavBar/>
-            <p>this is the MyProfilRecipe page, congrat</p>
-        <Footer/>
+            <NavBar/>
+            <Page404/>
+            <Footer/>
         </>
     
     )
