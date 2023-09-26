@@ -9,20 +9,21 @@ export default function Home() {
     return (
         <>
             <NavBarWshearch/>
-            <SearchBar/>
             <img src="public/logo + texte(1).svg"/>
             <h2>Weekly selection</h2>
             <hr/>
             <Caroussel/>
             <h2>My recipes </h2>
             <hr/>
-            <div>
-                <img src="public/assets/img/about-us_food.png"></img>
+            <div className="card-home">
+                <div>
+                    <img src="public/assets/img/about-us_food.png"></img>
+                </div>
                 <div>
                     <h3>Titre</h3>
                     <p>15-30</p>
                     <p>Entrée</p>
-                    <button>Fléche</button>
+                    <button><img src="public/assets/icons/right arrow.svg"/></button>
                 </div>
             </div>
             <Footer/>

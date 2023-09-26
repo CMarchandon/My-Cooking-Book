@@ -5,10 +5,11 @@
 @import './components/_accordeon.scss';
 @import './components/_footer.scss';
 @import './components/_navbar.scss';
-@import "./base/_page404.scss";
+@import './base/_page404.scss';
+@import './abstracts/_card-home.scss';
 
 body {
-    background-color: $fakeWhite;
+    background-color: #F6F6F6;
     min-height: 100vh;
 }
 

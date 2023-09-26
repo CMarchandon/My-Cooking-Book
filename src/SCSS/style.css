@@ -277,8 +277,30 @@ footer button {
   background-color: #FF9F68;
 }
 
+.card-home {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.25);
+  margin: 15px;
+  max-width: 246px;
+  min-height: 261px;
+}
+.card-home div {
+  height: 50%;
+  border: red;
+}
+.card-home div img {
+  width: 246px; /* width of container */
+  height: 132px; /* height of container */
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 20% 10%;
+     object-position: 20% 10%; /* try 20px 10px */
+  border-radius: 5px 5px 0 0;
+}
+
 body {
-  background-color: #F9F9F9;
+  background-color: #F6F6F6;
   min-height: 100vh;
 }
 
