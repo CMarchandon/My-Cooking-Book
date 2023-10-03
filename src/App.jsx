@@ -26,6 +26,7 @@ function App() {
             <Route path="/Discover" element={<Discover/>}/>
             <Route path="/EditRecipe" element={<EditRecipe/>}/>
             <Route index element={<Home/>}/>
+            {/*AJOUTER LO-IN // IF RESOLUTION PETITE -> go log-in smartphone*/}
             <Route path="/Home" element={<Home/>}/>
             <Route path="/MyProfil" element={<MyProfil/>}/>
             <Route path="/Page404" element={<Page404/>}/>
